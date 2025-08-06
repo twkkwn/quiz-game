@@ -41,6 +41,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <meta property="og:title" content="식품의약품안전처 OX 퀴즈" />
+      <meta property="og:description" content="식품의약품안전처 공식 OX 퀴즈에 도전해보세요!" />
+      <meta property="og:url" content="https://mfds-quiz-game.vercel.app" />
+      <meta property="og:site_name" content="식품의약품안전처 OX 퀴즈" />
+      <meta property="og:type" content="website" />
+      <meta property="og:locale" content="ko_KR" />
+      <meta property="og:image" content="https://mfds-quiz-game.vercel.app/og-image.png" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

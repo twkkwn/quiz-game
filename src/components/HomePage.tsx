@@ -21,7 +21,7 @@ export default function HomePage({ onStartGame }: HomePageProps) {
       {/* 콘텐츠 폭 제한: 모바일 최적(최대 480px) */}
       <div className="mx-auto max-w-[480px] min-h-screen px-6 flex flex-col">
         {/* 상단 여백 */}
-        <div className="h-10" />
+        {/* <div className="h-10" /> */}
 
         {/* 1) 상단 로고 + 기관명 */}
         <header className="flex flex-col items-center text-center">
@@ -88,7 +88,7 @@ export default function HomePage({ onStartGame }: HomePageProps) {
         </section>
 
         {/* 4) 하단 일러스트 + 캡션 */}
-        <footer className="mt-10 pt-12 pb-8">
+        <footer className="mt-auto pt-12 pb-8">
           <div className="mb-10 flex justify-center">
             {/* ▶ 하단 일러스트 (경로는 IMG_COSMETICS에서만 수정) */}
             <Image

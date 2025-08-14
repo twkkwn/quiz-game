@@ -3,11 +3,12 @@
 import React, { useState } from 'react';
 import { GameState, QuizData } from '@/types/quiz';
 import { selectGameQuestions } from '../data/quizData';
-import HomePage from './HomePage';
+// import HomePage from './HomePage';
 import GamePage from './GamePage';
 import ResultPopup from './ResultPopup';
 import SuccessPage from './SuccessPage';
 import FailurePage from './FailurePage';
+import HomePage from './HomePage';
 
 export default function QuizGame() {
   // 상태 관리

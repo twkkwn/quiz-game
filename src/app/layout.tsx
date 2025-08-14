@@ -1,16 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { cafe24Ssurround, cafe24Shining, oneMobile, oneMobileBold } from "./fonts";
 
 export const metadata: Metadata = {
   title: "식품의약품안전처 OX 퀴즈",
@@ -51,7 +41,7 @@ export default function RootLayout({
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${cafe24Shining.variable} ${cafe24Ssurround.variable} ${oneMobile.variable} ${oneMobileBold.variable} antialiased`}
       >
         {children}
       </body>

@@ -17,9 +17,9 @@ const IMG_COSMETICS = '/assets/cosmetics.png';   // 하단 일러스트 경로
 
 export default function HomePage({ onStartGame }: HomePageProps) {
   return (
-    <main className="min-h-screen bg-[#f7f7f7] text-[#3c3c3c]  bg-[url(/assets/background.webp)] bg-cover bg-no-repeat bg-center">
+    <main className="relative min-h-dvh bg-[#fbfbfc] text-[#3c3c3c]  bg-[url(/assets/background.webp)] bg-contain bg-no-repeat bg-center">
       {/* 콘텐츠 폭 제한: 모바일 최적(최대 480px) */}
-      <div className="mx-auto max-w-[480px] min-h-screen px-6 flex flex-col " >
+      <div className="mx-auto max-w-[480px] min-h-dvh px-6 flex flex-col " >
         {/* 상단 여백 */}
         <div className="h-15" />
 

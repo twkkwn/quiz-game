@@ -21,7 +21,7 @@ export default function HomePage({ onStartGame }: HomePageProps) {
       {/* 콘텐츠 폭 제한: 모바일 최적(최대 480px) */}
       <div className="mx-auto max-w-[480px] min-h-screen px-6 flex flex-col">
         {/* 상단 여백 */}
-        <div className="h-8" />
+        <div className="h-10" />
 
         {/* 1) 상단 로고 + 기관명 */}
         <header className="flex flex-col items-center text-center">
@@ -29,14 +29,14 @@ export default function HomePage({ onStartGame }: HomePageProps) {
           <Image
             src={IMG_LOGO}
             alt="식품의약품안전처 로고"
-            width={250}
-            height={250}
+            width={200}
+            height={50}
             priority
           />
         </header>
         {/* 2) 메인 타이틀 */}
         <section className="mt-2 text-center">
-          <h1 className="text-[50px] leading-tight font-[cafe24Ssurround] tracking-tight text-[#3d3d3d]">
+          <h1 className="text-[2.5rem] leading-tight font-[cafe24Ssurround] tracking-tight text-[#3d3d3d]">
             퀴즈게임에
             <br />
             도전하시겠습니까?
@@ -50,7 +50,7 @@ export default function HomePage({ onStartGame }: HomePageProps) {
           {IMG_START_RING ? (
             <button
               onClick={onStartGame}
-              className="relative w-[130px] h-[130px] rounded-full focus:outline-none active:scale-95 transition cursor-pointer"
+              className="relative w-[100px] h-[100px] rounded-full focus:outline-none active:scale-95 transition cursor-pointer"
               aria-label="퀴즈 시작"
             >
               {/* ▶ START 링 이미지 (경로는 IMG_START_RING에서만 수정) */}
@@ -58,10 +58,10 @@ export default function HomePage({ onStartGame }: HomePageProps) {
                 src={IMG_START_RING}
                 alt="START"
                 fill
-                sizes="150px"
+                sizes="100px"
                 className="object-contain"
               />
-              <span className="absolute inset-0 flex items-center justify-center text-[22px] font-[cafe24Ssurround] text-[#6b6b6b]">
+              <span className="absolute inset-0 flex items-center justify-center text-[1rem] font-[cafe24Ssurround] text-[#6b6b6b]">
                 START
               </span>
             </button>
@@ -74,7 +74,7 @@ export default function HomePage({ onStartGame }: HomePageProps) {
                          border border-[#e5e5e5] active:scale-95 transition"
               aria-label="퀴즈 시작"
             >
-              <span className="absolute inset-0 flex items-center justify-center text-[22px] font-[cafe24Ssurround] text-[#6b6b6b]">
+              <span className="absolute inset-0 flex items-center justify-center text-[1rem] font-[cafe24Ssurround] text-[#6b6b6b]">
                 START
               </span>
             </button>
@@ -82,13 +82,13 @@ export default function HomePage({ onStartGame }: HomePageProps) {
           
 
           {/* ▶ 버튼 아래 설명 텍스트 */}
-          <p className="mt-3 text-[16px] text-[#000000] font-[oneMobile] font-normal tracking-tight text-center">
+          <p className="mt-3 text-[1rem] text-[#000000] font-[oneMobile] font-normal tracking-tight text-center">
             클릭 시 퀴즈가 시작됩니다
           </p>
         </section>
 
         {/* 4) 하단 일러스트 + 캡션 */}
-        <footer className="mt-auto pt-12 pb-8">
+        <footer className="mt-10 pt-12 pb-8">
           <div className="mb-10 flex justify-center">
             {/* ▶ 하단 일러스트 (경로는 IMG_COSMETICS에서만 수정) */}
             <Image

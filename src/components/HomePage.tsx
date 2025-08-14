@@ -21,7 +21,7 @@ export default function HomePage({ onStartGame }: HomePageProps) {
       {/* 콘텐츠 폭 제한: 모바일 최적(최대 480px) */}
       <div className="mx-auto max-w-[480px] min-h-screen px-6 flex flex-col">
         {/* 상단 여백 */}
-        <div className="h-25" />
+        <div className="h-15" />
 
         {/* 1) 상단 로고 + 기관명 */}
         <header className="flex flex-col items-center text-center">
@@ -35,8 +35,8 @@ export default function HomePage({ onStartGame }: HomePageProps) {
           />
         </header>
         {/* 2) 메인 타이틀 */}
-        <section className="mt-2 text-center">
-          <h1 className="text-[2.5rem] leading-tight font-[cafe24Ssurround] tracking-tight text-[#3d3d3d]">
+        <section className="mt-5 text-center">
+          <h1 className="text-[2rem] leading-tight font-[cafe24Ssurround] tracking-tight text-[#3d3d3d]">
             퀴즈게임에
             <br />
             도전하시겠습니까?
@@ -50,7 +50,7 @@ export default function HomePage({ onStartGame }: HomePageProps) {
           {IMG_START_RING ? (
             <button
               onClick={onStartGame}
-              className="relative w-[100px] h-[100px] rounded-full focus:outline-none active:scale-95 transition cursor-pointer"
+              className="relative w-[130px] h-[130px] rounded-full focus:outline-none active:scale-95 transition cursor-pointer"
               aria-label="퀴즈 시작"
             >
               {/* ▶ START 링 이미지 (경로는 IMG_START_RING에서만 수정) */}
@@ -94,7 +94,7 @@ export default function HomePage({ onStartGame }: HomePageProps) {
             <Image
               src={IMG_COSMETICS}
               alt="화장품 일러스트"
-              width={300}
+              width={150}
               height={100}
               className="object-contain w-auto h-auto"
             />

@@ -21,7 +21,7 @@ export default function HomePage({ onStartGame }: HomePageProps) {
       {/* 콘텐츠 폭 제한: 모바일 최적(최대 480px) */}
       <div className="mx-auto max-w-[480px] min-h-screen px-6 flex flex-col">
         {/* 상단 여백 */}
-        <div className="h-10" />
+        <div className="h-25" />
 
         {/* 1) 상단 로고 + 기관명 */}
         <header className="flex flex-col items-center text-center">

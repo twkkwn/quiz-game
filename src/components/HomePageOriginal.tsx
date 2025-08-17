@@ -29,14 +29,14 @@ export default function HomePage({ onStartGame }: HomePageProps) {
           <Image
             src={IMG_LOGO}
             alt="식품의약품안전처 로고"
-            width={200}
+            width={260}
             height={50}
             priority
           />
         </header>
         {/* 2) 메인 타이틀 */}
-        <section className="mt-5 text-center">
-          <h1 className="text-[2rem] leading-tight font-[cafe24Ssurround] tracking-tight text-[#3d3d3d]">
+        <section className="mt-1 text-center">
+          <h1 className="text-[3rem] leading-tight font-[cafe24Ssurround] tracking-tight text-[#3d3d3d]">
             퀴즈게임에
             <br />
             도전하시겠습니까?
@@ -44,13 +44,13 @@ export default function HomePage({ onStartGame }: HomePageProps) {
         </section>
 
        {/* 3) START 버튼 구역 */}
-        <section className="mt-auto flex flex-col items-center">
+        <section className="mt-10 flex flex-col items-center">
           {/* 이미지 버튼 버전: 링 PNG 위에 START 텍스트 오버레이 */}
          
           {IMG_START_RING ? (
             <button
               onClick={onStartGame}
-              className="relative w-[130px] h-[130px] rounded-full focus:outline-none active:scale-95 transition cursor-pointer"
+              className="relative w-[120px] h-[150px] rounded-full focus:outline-none active:scale-95 transition cursor-pointer"
               aria-label="퀴즈 시작"
             >
               {/* ▶ START 링 이미지 (경로는 IMG_START_RING에서만 수정) */}
@@ -61,7 +61,7 @@ export default function HomePage({ onStartGame }: HomePageProps) {
                 sizes="100px"
                 className="object-contain"
               />
-              <span className="absolute inset-0 flex items-center justify-center text-[1rem] font-[cafe24Ssurround] text-[#6b6b6b]">
+              <span className="absolute inset-0 flex items-center justify-center text-[1.3rem] font-[cafe24Ssurround] text-[#6b6b6b]">
                 START
               </span>
             </button>
@@ -82,27 +82,27 @@ export default function HomePage({ onStartGame }: HomePageProps) {
           
 
           {/* ▶ 버튼 아래 설명 텍스트 */}
-          <p className="mt-3 text-[1rem] text-[#000000] font-[oneMobile] font-normal tracking-tight text-center">
+          <p className="text-[1.1rem] text-[#000000] font-[oneMobile] font-normal tracking-tight text-center">
             클릭 시 퀴즈가 시작됩니다
           </p>
         </section>
 
         {/* 4) 하단 일러스트 + 캡션 */}
-        <footer className="mt-auto pb-8">
+        <footer className="mt-auto pb-3">
           <div className="mb-10 flex justify-center">
             {/* ▶ 하단 일러스트 (경로는 IMG_COSMETICS에서만 수정) */}
             <Image
               src={IMG_COSMETICS}
               alt="화장품 일러스트"
-              width={150}
-              height={100}
+              width={257}
+              height={200}
               className="object-contain w-auto h-auto"
             />
           </div>
 
           {/* 하단 라인 + 캡션 */}
-          <div className="border-t border-[#cfcfcf] pt-3 text-center">
-            <span className="text-[18px] font-[cafe24Ssurround] tracking-tight">
+          <div className="border-t border-[#000000] pt-3 text-center">
+            <span className="text-[1.3rem] font-[cafe24Ssurround] tracking-tight">
               2025 화장품의 날
             </span>
           </div>
